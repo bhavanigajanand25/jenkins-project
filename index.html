@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps CI/CD Project</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+            color:#333;
+        }
+
+        header{
+            background:#0d6efd;
+            color:white;
+            padding:25px;
+            text-align:center;
+        }
+
+        nav{
+            background:#222;
+            padding:15px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 20px;
+            font-weight:bold;
+        }
+
+        section{
+            width:80%;
+            margin:40px auto;
+        }
+
+        .card{
+            background:white;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 2px 10px rgba(0,0,0,.1);
+            margin-bottom:30px;
+        }
+
+        h2{
+            color:#0d6efd;
+            margin-bottom:15px;
+        }
+
+        ul{
+            margin-left:20px;
+            line-height:1.8;
+        }
+
+        footer{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:40px;
+        }
+
+        .button{
+            display:inline-block;
+            margin-top:20px;
+            padding:12px 25px;
+            background:#0d6efd;
+            color:white;
+            text-decoration:none;
+            border-radius:5px;
+        }
+
+        .button:hover{
+            background:#084fc7;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>DevOps CI/CD Pipeline Project</h1>
+    <p>Automating Build, Test, and Deployment using Modern DevOps Tools</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#tools">Tools</a>
+    <a href="#pipeline">Pipeline</a>
+</nav>
+
+<section id="about">
+    <div class="card">
+        <h2>About This Project</h2>
+
+        <p>
+            This project demonstrates a complete CI/CD pipeline for a containerized
+            web application. Every code change pushed to GitHub automatically
+            triggers Jenkins to build Docker images, test the application,
+            and deploy it to an AWS EC2 instance using Docker Compose.
+        </p>
+
+        <a href="#" class="button">View Source Code</a>
+    </div>
+</section>
+
+<section id="tools">
+    <div class="card">
+        <h2>Technologies Used</h2>
+
+        <ul>
+            <li>Git & GitHub</li>
+            <li>Docker</li>
+            <li>Docker Compose</li>
+            <li>Jenkins</li>
+            <li>Terraform</li>
+            <li>AWS EC2</li>
+            <li>HTML & CSS</li>
+        </ul>
+    </div>
+</section>
+
+<section id="pipeline">
+    <div class="card">
+        <h2>CI/CD Workflow</h2>
+
+        <ol style="margin-left:20px; line-height:2;">
+            <li>Developer pushes code to GitHub.</li>
+            <li>GitHub webhook triggers Jenkins.</li>
+            <li>Jenkins clones the repository.</li>
+            <li>Docker images are built.</li>
+            <li>Application is tested.</li>
+            <li>Terraform provisions infrastructure (if required).</li>
+            <li>Docker Compose deploys the application.</li>
+            <li>The updated website is available to users.</li>
+        </ol>
+    </div>
+</section>
+
+<footer>
+    <p>DevOps CI/CD Demo Project | Docker • Jenkins • Terraform • GitHub • AWS</p>
+</footer>
+
+</body>
+</html>
