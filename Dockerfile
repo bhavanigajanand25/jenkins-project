@@ -1,4 +1,4 @@
 FROM nginx
-COPY . /usr/share/nginx/index.html
+COPY . /usr/share/nginx/html
 EXPOSE 80
 
