@@ -1,7 +1,7 @@
 services:
   nginx:
     build: .
-    image: my-nginx-site:1.0
+    image: bhava/nginx-site:latest
     container_name: nginx-web
     ports:
       - "80:80"
