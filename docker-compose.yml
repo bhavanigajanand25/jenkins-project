@@ -1,0 +1,7 @@
+services:
+  nginx:
+    build: .
+    image: my-nginx-site:1.0
+    container_name: nginx-web
+    ports:
+      - "80:80"
